@@ -1,10 +1,20 @@
+import './style.css';
+
 class Gallery {
-    constructor(options) {
-        this.res = document.querySelector('.result')
-        this.plus = document.querySelector('.next')
-        this.minus = document.querySelector('.prev')
-        this.img = document.querySelector('img')
-        this.dots = document.querySelector('ul')
+    constructor(element, options) {
+        element.innerHTML = `<div class="gallery">
+            <button class="prev">-</button>
+                <span class="result"></span>
+            <button class="next">+</button>
+            <img src="/" alt="">
+            <ul>
+            </ul>
+        </div>`
+        this.res = element.querySelector('.result')
+        this.plus = element.querySelector('.next')
+        this.minus = element.querySelector('.prev')
+        this.img = element.querySelector('img')
+        this.dots = element.querySelector('ul')
 
         this.time = options.time
         this.infinity = options.infinity

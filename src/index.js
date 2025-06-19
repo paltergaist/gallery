@@ -1,4 +1,8 @@
-export default {
+import './style.css'
+import { Gallery } from '../bundler/gallery.js';
+
+const element = document.getElementById('root')
+const options = {
   imgs: [                      // Массив URL изображений
             'https://avatars.mds.yandex.net/i?id=9096e7b12b6be3b02ce4a28a01823c1a_l-4373502-images-thumbs&n=13',
             'https://cs10.pikabu.ru/post_img/2019/03/30/6/og_og_1553936648256039666.jpg',
@@ -9,4 +13,6 @@ export default {
   infinity: true,              // Бесконечная прокрутка
   dotsApply: true,             // Показывать точки-индикаторы
   buttons: true                // Показывать кнопки навигации
-}; 
+}
+
+new Gallery(element, options)
