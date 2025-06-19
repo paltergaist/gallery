@@ -1,5 +1,5 @@
 import './style.css'
-import { Gallery } from '../bundler/gallery.js';
+import { Gallery } from './gallery.js';
 
 const element = document.getElementById('root')
 const options = {
