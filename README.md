@@ -45,13 +45,11 @@ new Gallery(element, options)
 
 ```bash
 # Сборка основного приложения
-npm run build
+npm run dist
 
 # Сборка файлов галереи для использования
-npm run build:bundlers
+npm run bundler
 
-# Разработка
-npm run dev
+# Запуск сервера для показа демо
+npm run start
 ```
-
-Подробная информация о файлах в папке `bundlers/` находится в [bundlers/README.md](bundlers/README.md).
