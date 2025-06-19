@@ -80,7 +80,6 @@ module.exports = (env, argv) => {
       rules: commonRules
     },
     plugins: [
-      // Убрали CleanWebpackPlugin для dist конфигурации
       new HtmlWebpackPlugin({
         template: './index.html',
         filename: 'index.html',
